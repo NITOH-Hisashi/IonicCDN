@@ -5,6 +5,7 @@ const visibleCount = 20;
 const ScrollList = () => {
   const [startIndex, setStartIndex] = React.useState(0);
 
+  // スクロール領域を制限し、表示アイテムを動的に切り替える
   React.useEffect(() => {
     const container = document.getElementById('scroll-container');
     container.addEventListener('scroll', () => {
@@ -14,6 +15,7 @@ const ScrollList = () => {
     });
   }, []);
 
+  // 表示アイテム
   const items = [];
   for (let i = startIndex; i < startIndex + visibleCount; i++) {
     items.push(
