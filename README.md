@@ -438,4 +438,7 @@ ReactDOM.createRoot(document.getElementById('visible-items')).render(<ScrollList
 - CDN構成では `react-virtuoso` は使えないため、スクロールイベントを使った手動実装が必要。
 
 ---
-
+## 開発サーバーを実行する
+1. `npm run dev`を実行して開発サーバーを起動します。
+2. アプリケーションを表示するには、`http://localhost:3000` こちらにアクセスしてください。
+3. ファイルを編集し`app/page.js`で保存すると、更新された結果がブラウザに表示されます。
